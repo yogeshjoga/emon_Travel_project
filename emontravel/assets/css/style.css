@@ -1,0 +1,1047 @@
+/* FONTS */
+@import url(../css/clash-display.css);
+
+/* VARIABLES */
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+/* RESET & HELPERS */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-white);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+
+/* BTN */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/blurred-city-street\ 1.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ICONBOX */
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+
+
+/* COUNTER */
+#counter {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.side-image{
+    background-image: url(../images/map1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+/* CONTACT */
+#contact {
+    position: relative;
+    z-index: 2;
+}
+
+#contact::after {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba((#ffc71a), 0.8), rgba((#ffc71a), 0.8)), url(../images/blurred-city-street\ 1.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contact .form-control {
+    border-radius: 0;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--c-yellow);
+}
+
+/* FOOTER */
+footer {
+    padding-top: 120px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: #ffc71a;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+@font-face {
+    font-family: 'InknutAntiqua';
+    src: url(font/InknutAntiqua-Regular.ttf);
+ }
+
+
+
+ .foot-box{
+    background-color: #FFC71A;
+    color: black;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    font-family: 'InknutAntiqua';
+  }
+  .foot-box h2{
+    margin: auto;
+    padding-top: 60px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+    font-family: 'InknutAntiqua';
+    
+  }
+  .foot-box h1{
+    margin: auto;
+   
+    font-family: 'InknutAntiqua';
+    font-size: 40px;
+    
+  }
+
+
+
+
+  .yellow-box {
+    border: 0.5px solid rgb(247, 247, 247);
+    outline: #FFC71A solid 200px;
+    margin: 20px 150px 20px 150px;  
+    padding: 60px;
+    text-align: center;
+    height: 200px;
+  }
+  .inside{
+    justify-content: space-between;
+    padding: 0px 150px 30px 150px;
+  }
+
+  .banner1{
+    height: 220px;
+    background: url(../images/Rectangle\ 7.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: end;
+    margin-top: 20px;
+}
+.banner1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4), transparent);
+    mix-blend-mode: multiply;
+}
+.banner1 .container{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.banner1 .container .text{
+    padding-bottom: 15px;
+    z-index: 1;
+    color: #fff;
+    width: 200;
+    font-family: 'InknutAntiqua';
+}
+.banner1 .container .text h5{
+    font-size: 15px;
+    align-items: end;
+    
+    
+} 
+
+
+
+.banner2{
+    height: 220px;
+    background: url(../images/Rectangle\ 8.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: end;
+    margin-top: 20px;
+}
+.banner2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4), transparent);
+    mix-blend-mode: multiply;
+}
+.banner2 .container{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.banner2 .container .text{
+    padding-bottom: 15px;
+    z-index: 1;
+    color: #fff;
+    width: 200;
+    font-family: 'InknutAntiqua';
+}
+.banner2 .container .text h5{
+    font-size: 15px;
+    align-items: end;
+    
+}
+
+
+.banner3{
+    height: 220px;
+    background: url(../images/Rectangle\ 9.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: end;
+    margin-top: 20px;
+}
+.banner3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4), transparent);
+    mix-blend-mode: multiply;
+}
+.banner3 .container{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.banner3 .container .text{
+    padding-bottom: 15px;
+    z-index: 1;
+    color: #fff;
+    width: 200;
+    font-family: 'InknutAntiqua';
+}
+.banner3 .container .text h5{
+    font-size: 15px;
+    align-items: end;
+    
+}
+
+
+.banner4{
+    height: 220px;
+    background: url(../images/Rectangle\ 10.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: end;
+    margin-top: 20px;
+}
+.banner4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4), transparent);
+    mix-blend-mode: multiply;
+}
+.banner4 .container{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.banner4 .container .text{
+    padding-bottom: 15px;
+    z-index: 1;
+    color: #fff;
+    width: 200;
+    font-family: 'InknutAntiqua';
+}
+.banner4 .container .text h5{
+    font-size: 15px;
+    align-items: end;
+    
+}
+
+
+.banner5{
+    height: 220px;
+    background: url(../images/Rectangle\ 11.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: end;
+    margin-top: 20px;
+}
+.banner5::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4), transparent);
+    mix-blend-mode: multiply;
+}
+.banner5 .container{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.banner5 .container .text{
+    padding-bottom: 15px;
+    z-index: 1;
+    color: #fff;
+    width: 200;
+    font-family: 'InknutAntiqua';
+}
+.banner5 .container .text h5{
+    font-size: 15px;
+    align-items: end;
+    
+}
+
+
+.banner6{
+    height: 220px;
+    background: url(../images/Rectangle\ 12.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: end;
+    margin-top: 20px;
+}
+.banner6::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4), transparent);
+    mix-blend-mode: multiply;
+}
+.banner6 .container{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.banner6 .container .text{
+    
+    z-index: 1;
+    color: #fff;
+    width: 200;
+    padding-bottom: 15px;
+    font-family: 'InknutAntiqua';
+}
+.banner6 .container .text h5{
+    font-size: 15px;
+    align-items: end;
+    
+    
+}
+
+.section1{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    rotate: 180deg;
+    margin-top: -350px;
+    
+
+}
+.section1:before{
+
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+
+.section1 .container{
+    
+    display: flex;
+    
+    
+    
+}
+.section1 .container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+    
+}
+.section1 .container .row img{
+  
+    rotate: 180deg;
+    z-index: 1;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    margin-right: 20px;
+    
+  
+    
+}
+
+.section1 .container .text{
+    
+    rotate: 180deg;
+    z-index: 1;
+    color: black;
+    
+    margin-right: 200px;
+    padding-bottom: 15px;
+    font-family: 'InknutAntiqua';
+}
+.section1 .container .text h5{
+    font-size: 20px;
+    font-family: 'InknutAntiqua';
+    
+    
+    
+}
+
+.bottom-img{
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/Rectangle\ 5.png);    
+    background-size: cover;
+    background-position: center;
+    z-index: 20;
+    margin-top: 100px;
+    font-family: 'InknutAntiqua';
+}
+.bottom-img h1{
+    color: white;
+    display: flex;
+    flex-direction: '';
+    justify-content: center;
+    padding-top: 100px;
+    width: 650px;
+    margin: auto;    
+    text-align: center;
+    font-family: 'InknutAntiqua';
+    font-size: 30px;
+
+}
+.book-ride{
+    background-color:#FFC71A ;
+    border: none;
+    color: #333;
+    border-radius: 6px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: '';
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'InknutAntiqua';
+    
+}
+
+
+.test { 
+    position: relative;
+ 
+    h2 {
+    background-color: #bebebe;
+    position: absolute;
+    bottom: 0px; 
+    left: 0px; 
+    width: 100%;
+   }
+ }
+
+ 
+/*FORMS*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.main3{
+    min-height:85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#FFC71A ;
+    
+}
+.container2{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   
+}
+
+.container2 form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 240px;
+    background-color: #fff;
+    overflow: hidden;
+    font-family: 'InknutAntiqua';
+}
+.container2 form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.container2 form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.container2 form button, .Taxi-Btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #000000;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.container2 form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color:#FFC71A;
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 750px) {
+    .container2 form{
+        overflow-y: scroll;
+    }
+    .container2 form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}
+.callus{
+    font-size: 10px;
+    opacity: 0.5;
+}
+.car-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: -106px;
+    
+    
+    
+
+  }
+  .box-col{
+    background-color: #FFC71A;
+    width: 100%;
+  }
+
+  
+
+  .white-box{
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+   
+    height: 100vh;
+    background:  url(../images/carimg.png);    
+    background-size: cover;
+    background-position: center;
+  }
+/*map image*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+
+.wrapper1{
+    background: #ffffff;
+    padding: 0 20px 0 20px;
+    margin-top: 0px;
+    font-family: 'InknutAntiqua';
+}
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-bottom: 40px;
+}
+.row2{
+    width: 1500px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image1{
+    background-image: url("../images/map1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box1{
+    width: 400px;
+    box-sizing: border-box;
+}
+.input-box1 header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.input1{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 10px;
+    color: #40414a;
+    padding-left: 4px;
+}
+.input-box1 .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .side-image1{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+    
+}
+
+/**
+ * WHATS APP ICON-STYLES 
+ * 
+ */
+
+
+.whatsapp-btn-container {
+    position: fixed;
+    right: 30px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #fffb1a;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #fffb1a;
+    text-shadow: #000000;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover+span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+
+/**
+ * 
+ * pages styleSheets 
+ */
+
+ @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+ .wedding_transport_background {
+     background-color: #ffc71a;
+     height: 100vh;
+     background-size: cover;
+     font-family: 'Bree Serif';
+ }
+
+ .card-design {
+     height: 430px;
+     width: 500px;
+     margin-right: 1px;
+     margin-left: 1px;
+     background-color: #ffffff;
+     padding: 50px;
+     border-radius: 20px;
+ }
+
+ .card-heading {
+     font-weight: bold;
+     text-align: center;
+     font-size: 25px;
+     color: #ffc71a;
+ }
+
+
+ /**
+  * about page css
+  */
+
+  .ceo{
+  height: 80%;
+  width: 70%;
+  border-radius: 100%;
+  }
+
+  /**
+   * ceo text
+   * class ceo_name
+   */
+  
+   .ceo_name{
+    padding-top: 20px;
+
+    text-indent: 88px;
+   }
+
+
+   /**
+    * 
+    * Cab styles 
+    */
+
+    .cab{
+        height: 70%;
+        border-radius: 45px;
+    }
+    .cab_2{
+        height: 310px;
+        border-radius: 45px;
+    }
+
+
+    /**
+     * 
+     * Developers images
+     * 
+     */
+    .developer{
+        
+
+    }
+    .dev_tag{
+        padding-left: 5%;
+    }
